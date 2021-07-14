@@ -10,8 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo "Build is starting"
-  displayName: 'Build Start'
+- script: echo "hi1"
+  displayName: 'hello1'
   
 
 - script: echo Hello, world!
@@ -23,6 +23,6 @@ steps:
   displayName: 'Run a multi-line script'
   
 
-- script: echo "Finished build"
-  displayName: 'Build end'
+- script: echo "hi2"
+  displayName: 'hello2'
   
