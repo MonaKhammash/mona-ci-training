@@ -22,13 +22,13 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(System.DefaultWorkingDirectory)/ci1.txt'
+    artifactName: drop
+  
 
 - script: echo "Build is finished"
   displayName: 'Finish build'
   
-- publish: $(System.DefaultWorkingDirectory)/ci1.txt
-  artifact: ci1
-  
-- publish: $(System.DefaultWorkingDirectory)/ci2.txt
-  artifact: ci2
-  
+
