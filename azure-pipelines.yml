@@ -26,3 +26,9 @@ steps:
 - script: echo "Build is finished"
   displayName: 'Finish build'
   
+- publish: $(System.DefaultWorkingDirectory)/ci1.txt
+  artifact: ci1
+  
+- publish: $(System.DefaultWorkingDirectory)/ci2.txt
+  artifact: ci2
+  
