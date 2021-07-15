@@ -25,7 +25,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: '$(System.DefaultWorkingDirectory)/ci1.txt'
-    artifactName: drop
+    artifactName: ci1
   
 
 - script: echo "Build is finished"
